@@ -1,0 +1,94 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/node', '/usr/bin/npm', 'publish' ]
+2 info using npm@2.0.0
+3 info using node@v0.11.14
+4 verbose publish [ '.' ]
+5 verbose cache add [ '.', null ]
+6 verbose cache add spec="." args=[".",null]
+7 verbose parsed spec { raw: '.',
+7 verbose parsed spec   scope: null,
+7 verbose parsed spec   name: null,
+7 verbose parsed spec   rawSpec: '.',
+7 verbose parsed spec   spec: '/srv/missingdays/Projects/logger',
+7 verbose parsed spec   type: 'local' }
+8 verbose cache add local package /srv/missingdays/Projects/logger
+9 silly lockFile 3a52ce78- .
+10 verbose lock . /home/missingdays/.npm/3a52ce78-.lock
+11 verbose tar pack [ '/home/missingdays/.npm/basic-logger/1.0.0/package.tgz', '.' ]
+12 verbose tarball /home/missingdays/.npm/basic-logger/1.0.0/package.tgz
+13 verbose folder .
+14 info prepublish basic-logger@1.0.0
+15 silly lockFile 1f1177db-tar tar://.
+16 verbose lock tar://. /home/missingdays/.npm/1f1177db-tar.lock
+17 silly lockFile 79f22736-m-basic-logger-1-0-0-package-tgz tar:///home/missingdays/.npm/basic-logger/1.0.0/package.tgz
+18 verbose lock tar:///home/missingdays/.npm/basic-logger/1.0.0/package.tgz /home/missingdays/.npm/79f22736-m-basic-logger-1-0-0-package-tgz.lock
+19 silly lockFile 1f1177db-tar tar://.
+20 silly lockFile 1f1177db-tar tar://.
+21 silly lockFile 79f22736-m-basic-logger-1-0-0-package-tgz tar:///home/missingdays/.npm/basic-logger/1.0.0/package.tgz
+22 silly lockFile 79f22736-m-basic-logger-1-0-0-package-tgz tar:///home/missingdays/.npm/basic-logger/1.0.0/package.tgz
+23 silly lockFile a8eab0aa-s-npm-basic-logger-1-0-0-package /home/missingdays/.npm/basic-logger/1.0.0/package
+24 verbose lock /home/missingdays/.npm/basic-logger/1.0.0/package /home/missingdays/.npm/a8eab0aa-s-npm-basic-logger-1-0-0-package.lock
+25 silly lockFile a8eab0aa-s-npm-basic-logger-1-0-0-package /home/missingdays/.npm/basic-logger/1.0.0/package
+26 silly lockFile a8eab0aa-s-npm-basic-logger-1-0-0-package /home/missingdays/.npm/basic-logger/1.0.0/package
+27 silly lockFile 3a52ce78- .
+28 silly lockFile 3a52ce78- .
+29 silly publish { name: 'basic-logger',
+29 silly publish   version: '1.0.0',
+29 silly publish   description: 'The most basic logger you could ever imagine',
+29 silly publish   main: 'index.js',
+29 silly publish   scripts: { test: 'echo "Error: no test specified" && exit 1' },
+29 silly publish   author: '',
+29 silly publish   license: 'ISC',
+29 silly publish   readme: 'ERROR: No README data found!',
+29 silly publish   _id: 'basic-logger@1.0.0',
+29 silly publish   _shasum: '3e1692133d7f715e721de9f1e91331fd916ca5df',
+29 silly publish   _from: '.' }
+30 verbose mapToRegistry name basic-logger
+31 verbose mapToRegistry uri https://registry.npmjs.org/basic-logger
+32 verbose publish registryBase https://registry.npmjs.org/
+33 verbose request on initialization, where is /basic-logger
+34 verbose request after pass 1, where is /basic-logger
+35 verbose request url raw /basic-logger
+36 verbose request resolving registry [ 'https://registry.npmjs.org/', './basic-logger' ]
+37 verbose request after pass 2, where is https://registry.npmjs.org/basic-logger
+38 verbose request sending authorization for write operation
+39 info attempt registry request try #1 at 12:38:18
+40 verbose request using bearer token for auth
+41 verbose request id c55d92672540d7d1
+42 http request PUT https://registry.npmjs.org/basic-logger
+43 http 403 https://registry.npmjs.org/basic-logger
+44 verbose headers { 'content-type': 'application/json',
+44 verbose headers   'cache-control': 'max-age=60',
+44 verbose headers   'content-length': '104',
+44 verbose headers   'accept-ranges': 'bytes',
+44 verbose headers   date: 'Sat, 08 Aug 2015 09:38:19 GMT',
+44 verbose headers   via: '1.1 varnish',
+44 verbose headers   connection: 'close',
+44 verbose headers   'x-served-by': 'cache-ams4132-AMS',
+44 verbose headers   'x-cache': 'MISS',
+44 verbose headers   'x-cache-hits': '0',
+44 verbose headers   'x-timer': 'S1439026698.806486,VS0,VE663' }
+45 error publish Failed PUT 403
+46 verbose stack Error: You do not have permission to publish 'basic-logger'. Are you logged in as the correct user? : basic-logger
+46 verbose stack     at RegClient.<anonymous> (/usr/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:261:14)
+46 verbose stack     at Request._callback (/usr/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:198:65)
+46 verbose stack     at Request.self.callback (/usr/lib/node_modules/npm/node_modules/request/request.js:236:22)
+46 verbose stack     at Request.emit (events.js:110:17)
+46 verbose stack     at Request.<anonymous> (/usr/lib/node_modules/npm/node_modules/request/request.js:1142:14)
+46 verbose stack     at Request.emit (events.js:129:20)
+46 verbose stack     at IncomingMessage.<anonymous> (/usr/lib/node_modules/npm/node_modules/request/request.js:1096:12)
+46 verbose stack     at IncomingMessage.emit (events.js:129:20)
+46 verbose stack     at _stream_readable.js:907:16
+46 verbose stack     at process._tickCallback (node.js:372:11)
+47 verbose statusCode 403
+48 verbose pkgid basic-logger
+49 verbose cwd /srv/missingdays/Projects/logger
+50 error Linux 2.6.32-ovz-el-alt134
+51 error argv "/usr/bin/node" "/usr/bin/npm" "publish"
+52 error node v0.11.14
+53 error npm  v2.0.0
+54 error code E403
+55 error You do not have permission to publish 'basic-logger'. Are you logged in as the correct user? : basic-logger
+56 error If you need help, you may report this error at:
+56 error     <http://github.com/npm/npm/issues>
+57 verbose exit [ 1, true ]
