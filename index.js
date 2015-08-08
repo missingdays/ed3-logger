@@ -17,4 +17,11 @@ logger.unsetLog = function(){
     log = false;
 };
 
-module.exports = logger;
+if (typeof define === 'function' && define.amd) {
+    define("ed3-logger", logger);
+} else if ('undefined' !== typeof exports && 'undefined' !== typeof module) {
+    module.exports = logger;
+}
+
+
+
