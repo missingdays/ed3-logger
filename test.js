@@ -5,3 +5,4 @@ logger.info("info");
 logger.debug("debug");
 logger.error("error");
 logger.warn("warn");
+logger.log("log");

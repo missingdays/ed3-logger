@@ -32,7 +32,10 @@ define(function() {
         } else {
             console.info(this._processMsg(msg));
         }
-      },
+      }, 
+      log: function(msg){
+        this.debug(msg);
+      }
     };
 
     var loggers = {}, 
